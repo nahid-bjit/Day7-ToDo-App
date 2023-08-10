@@ -1,0 +1,45 @@
+.todo-app {
+    background-color: tomato;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+.todo-list {
+    padding: 10px 0;
+}
+
+.todo-item {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-item label {
+    flex: 1;
+}
+
+.delete-button {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+
+.submit-button {
+    background-color: green;
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
