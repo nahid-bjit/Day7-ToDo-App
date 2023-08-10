@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=div, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+<html>
+  <head>
+    <title>ToDoFy</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    </head>
+
+  <body>
+
+    
+    
     <div class="todo-app">
-        <h1>Todo App</h1>
-        <div class="todo-list">
+      <h1>Taskinator</h1>
 
-            <div class="todo-item">
-                <input type="checkbox">
-                <label for="">Task 1</label>
-                <button class="delete-button">X</button>
-            </div>
-            <div class="todo-item">
-                <input type="checkbox">
-                <label for="">Task 2</label>
-                <button class="delete-button">X</button>
-            </div>
+      <div class="user-greeting">
+        <input type="text" placeholder="What's your name" id="user-name" />
+        <button type="button" class="user-submit-button submit-button">Submit</button>
+      </div>
+
+      <div class="todo-list">
+        <!-- <div class="todo-item">
+          <input type="checkbox" />
+          <label>Task 1</label>
+          <button class="edit-button" ><i class="fa-solid fa-pen-to-square"></i></button>
+          <button class="delete-button">X</button>
         </div>
+    -->
+      </div>
 
-        <form action="">
-            <input type="text" placeholder="your task here">
-            <button type="submit" class="submit-button">Add</button>
-        </form>
+      <form class="todo-form">
+        <input type="text" placeholder="Add your task" id="new-task" />
+        <button type="submit" class="submit-button">Add</button>
+      </form>
+
+      <button class="delete-all-button">Delete All</button>
     </div>
-</body>
+
+
+    <script src="ourFunctions.js"></script>
+
+    <!-- font awesom script  -->
+    <script src="https://kit.fontawesome.com/9f5306895f.js" crossorigin="anonymous"></script>
+  </body>
 </html>

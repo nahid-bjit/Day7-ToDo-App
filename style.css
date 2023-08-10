@@ -1,28 +1,63 @@
-.todo-app {
-    background-color: tomato;
+#user-name {
+    height: 30px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 7px tomato;
+}
+
+.user-submit-button {
+    font-weight: 600;
+}
+
+.todo-app{
+    background-color: lightblue;
     max-width: 400px;
-    margin: auto;
-    border: 1px solid gray;
+    margin: 75px auto;
+    /* border: 1px solid #3b3030; */
     border-radius: 8px;
     padding: 5px 8px;
+    box-shadow: 0px 0px 5px tomato;
 }
 
-.todo-list {
+.todo-app h1{
+    text-align: center;
+}
+
+.todo-list{
     padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-.todo-item {
-    background-color: lightpink;
+.todo-item{
+    /* background-color: rgb(182, 200, 224); */
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
+    height: 20px;
+    border-radius: 8px;
+    
 }
 
-.todo-item label {
+.todo-item label{
     flex: 1;
+    margin-left: 5px;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.delete-button {
+label {
+    font-weight: 600;
+}
+
+
+.delete-button{
     background-color: red;
+    color: white;
+    height: 20px;
     border: none;
     border-radius: 5px;
 }
@@ -31,15 +66,114 @@
     cursor: pointer;
 }
 
+.submit-button{
+    box-shadow: 0px 0px 5px tomato;
+    background-color: #04AA6D;
+    font-weight: 600;
+    border: none;
+    height: 41px;
+    width: 120px;
+    border-radius: 5px;
+}
 
-.submit-button {
-    background-color: green;
+.submit-button:hover{
+    cursor: pointer;
+    background-color: #3e8e41
+}
+
+.submit-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0px 0px 25px tomato;
+    transform: translateY(4px);
+  }
+
+.todo-form{
+    margin-bottom: 10px;
+}
+.todo-form input{
+    height: 30px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 7px tomato;
+}
+
+
+.delete-all-button {
+    box-shadow: 0px 0px 5px tomato;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+    height: 41px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+.delete-all-button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+
+.delete-all-button:active {
+    background-color: darkred;
+    box-shadow: 0px 0px 25px tomato;
+    transform: translateY(4px);
+}
+
+
+.edit-button {
+    box-shadow: 0px 0px 5px tomato;
+    background-color: #2196F3;
+    color: white;
+    font-weight: 600;
     border: none;
     height: 30px;
-    width: 50px;
-    border-radius: 10px;
+    width: 70px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
-.submit-button:hover {
+
+.edit-button:hover {
     cursor: pointer;
+    background-color: #0E76A8;
 }
+
+
+.edit-button:active {
+    background-color: #0E76A8;
+    box-shadow: 0px 0px 10px tomato;
+    transform: translateY(2px);
+}
+
+/* .delete-button {
+    box-shadow: 0px 0px 5px tomato;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+    height: 41px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.delete-button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+
+.delete-button:active {
+    background-color: darkred;
+    box-shadow: 0px 0px 25px tomato;
+    transform: translateY(4px);
+}
+ */
